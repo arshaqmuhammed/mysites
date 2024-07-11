@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+    /* color: white; */
+}
+.navbar{
+    height: 65px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.nav-logo{
+    height: 65px;
+    width: 150px;
+    padding: 25px;
+    
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    height: 65px;
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat ;
+}
+
+.border{
+    border: 1px solid transparent;
+}
+.border:hover{
+    border: 1px solid white;
+}
+
+.add-first{
+    font-size: .85rem;
+    color: #cccccc;
+    margin-left: 15px;
+}
+.add-icon{
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+}
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 850px;
+    border-radius: 4px;
+    
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+.nav-select{
+    width: 51px;
+    color: #0f1111;
+    background-color: #f3f3f3;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    text-align: center;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    padding: 7px 10px 7px 10px;
+    border: none;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    background-color: rgba(252, 181, 29, 0.927);
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    font-size: 1.2rem;
+    
+}
+.nav-sign-in{
+    display: flex;
+    flex-direction: column;
+}
+.para1{
+    font-size: .7rem;
+    font-weight: 400;
+}
+.para2{
+    font-weight: 700;
+    font-size: .85rem;
+}
+.nav-returns{
+    display: flex;
+    flex-direction: column;
+}
+.nav-cart i{
+    font-size: 28px;
+}
+.nav-cart{
+    font-weight: 700;
+    font-size: .85rem;
+}
+.panel{
+    height: 39px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px 9px;
+    font-size: .9rem;
+    /* justify-content: space-evenly; */
+}
+.panel i{
+    font-size: 1.1rem;
+}
+.panel-all{
+    margin-left: 5px;
+    font-weight: 700;
+}
+.panel-ops p{
+    display: inline;
+    width: 80%;
+    margin-left: 18px;
+}
+.hero-section{
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.hero-msg{
+    font-size: .85rem;
+    height: 40px;
+    width: 96%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+
+}
+.hero-msg a{
+    color: #007185;
+}
+.store-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(198, 224, 228, 0.964);
+    flex-wrap: wrap;
+    
+}
+.box{
+    height: 420px;
+    width: 343px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px 15px;
+    margin: 0px 8px 17px 8px;
+    
+}
+.box-img{
+    height: 304px;
+    width: 313px;
+    background-size: cover;
+}
+.box h2{
+    font-size: 1.3rem;
+}
+.box a{
+    text-decoration: none;
+    color: #007185;
+    font-size: .85rem;
+}
+.to-top{
+    height: 49px;
+    background-color:#324155 ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: .85rem;
+}
+.footer-services{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    height: 500px;
+    color: #DDDDDD;
+    background-color: #232f3e;
+}
+.footer-services ul{
+    font-size: .9rem;
+    line-height: 30px;
+    list-style-type: none;
+}
+.box-img4{
+    height: 110px;
+    width: 140px; 
+    background-color: #007185;
+    border: 1px solid black;  
+    padding: 20px;
+}
+.box4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
