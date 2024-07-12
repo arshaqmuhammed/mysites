@@ -1,0 +1,79 @@
+body{
+    background-color: #130f40;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+color: white;
+}
+body h1, h4{
+    margin: 20px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    filter: brightness(5);
+    width: 80%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 20px;
+}
+div.gallery {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: 0.5s ease-in-out;
+    background-color: #130f40;
+    transform: scale(.9);
+}
+
+div.gallery:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+div.gallery img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    /* height: auto; */
+}
+  
+  div.desc {
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #130f40;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
