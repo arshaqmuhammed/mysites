@@ -1,29 +1,31 @@
-const passwordBox = document.getElementById('password');
-const generateBtn = document.getElementById('generate-btn');
+const display = document.getElementById("password-display");
+const copyBtn = document.getElementById("copy-btn");
+const generateBtn = document.getElementById("generate-btn");
+const lengthInput = document.getElementById("length-input");
+const lengthDisplay = document.getElementById("length-display");
 
-const length = 12;
-const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const lowerCase = "abcdefghijklmnopqrstuvwxyz";
-const numbers = "0123456789";
-const symbols = "!@#$%^&*()_<>?/[]-+~";
-const allChars = upperCase + lowerCase + numbers + symbols;
+const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+/-><".split("");
 
+generateBtn.addEventListener("click", () =>{
+    let length = lengthInput.value;
+    createPassword(length);
+});
 
-function createPassword(){
+lengthInput.addEventListener("input", (event) => {
+    lengthDisplay.innerText = event.target.value;
+})
+
+copyBtn.addEventListener("click", copyPassword);
+
+function createPassword(length){
     let password = "";
-    password += upperCase[Math.floor(Math.random() * upperCase.length)];
-    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
-    password += numbers[Math.floor(Math.random() * numbers.length)];
-    password += symbols[Math.floor(Math.random() * symbols.length)];
-
-    while(length > password.length){
-        password += allChars[Math.floor(Math.random() * allChars.length)];
+    for(let i=0; i<length; i++){
+        password += characters[Math.floor(Math.random() * characters.length)];
     }
-    passwordBox.value = password;
+    display.value = password;
 };
 
 function copyPassword(){
-    passwordBox.select();
+    display.select();
     document.execCommand("copy");
-    alert("Copied!!");
 }
