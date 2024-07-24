@@ -6,10 +6,10 @@
     font-style: normal;
 }
 body{
-    /* background-color: #000000; */
     background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
     background-repeat: no-repeat;
     height: auto;
+    min-height: 100vh;
     color: white;
     text-align: center;
 }
@@ -22,6 +22,7 @@ form{
     margin: 0px auto 75px;
     display: flex;
     background-color: #04619f63;
+    border-radius: 5px;
 }
 #search-input{
     height: 55px;
