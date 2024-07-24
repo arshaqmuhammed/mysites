@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #787878, #29ed82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 200px;
+    width: 800px;
+    margin: auto;
+    
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(40px);
+    font-size: 100px;   
+}
+@media (max-width:700px){
+    .clock{
+        font-size: 50px;
+    }
+}
